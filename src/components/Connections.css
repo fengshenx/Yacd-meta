@@ -39,6 +39,7 @@
 
 .react-tabs__tab--selected:hover {
   background: var(--color-text);
+  color: var(--color-background);
   opacity: 1;
 }
 
