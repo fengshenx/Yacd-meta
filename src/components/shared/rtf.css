@@ -12,8 +12,6 @@
   list-style: none;
 }
 .rtf.open .rtf--mb {
-  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14),
-    0px 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
 
 .rtf.open .rtf--mb > ul {
@@ -96,12 +94,11 @@
   transform: translateY(-50%);
   margin-right: 6px;
   margin-left: 4px;
-  background: rgba(0, 0, 0, 0.75);
+  background: var(--color-btn-bg);
   padding: 2px 4px;
-  border-radius: 2px;
-  color: white;
+  border-radius: 4px;
+  color: var(--color-btn-fg);
   font-size: 13px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
 }
 .rtf--mb__c > span.right {
   right: 100%;
@@ -118,13 +115,12 @@
   position: relative;
   border: none;
   border-radius: 50%;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
   cursor: pointer;
   outline: none;
   padding: 0;
   -webkit-user-drag: none;
   font-weight: bold;
-  color: #f1f1f1;
+  color: var(--color-btn-fg);
   font-size: 18px;
 }
 .rtf--mb > * {
@@ -147,12 +143,11 @@
   top: 50%;
   transform: translateY(-50%);
   margin-right: 6px;
-  background: rgba(0, 0, 0, 0.75);
+  background: var(--color-btn-bg);
   padding: 2px 4px;
-  border-radius: 2px;
-  color: white;
+  border-radius: 4px;
+  color: var(--color-btn-fg);
   font-size: 13px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
 }
 .rtf--ab__c > span.right {
   right: 100%;
@@ -204,30 +199,27 @@
   height: 40px;
   width: 40px;
   margin-right: 4px;
-  background-color: #aaaaaa;
+  background-color: var(--color-btn-bg);
   display: inline-flex;
   justify-content: center;
   align-items: center;
   position: relative;
   border: none;
   border-radius: 50%;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
   cursor: pointer;
   outline: none;
   padding: 0;
   -webkit-user-drag: none;
   font-weight: bold;
-  color: #f1f1f1;
+  color: var(--color-btn-fg);
   font-size: 16px;
   z-index: 10000;
 }
 
 .rtf--ab:hover {
-  background: var(--color-focus-blue);
-  border: 1px solid var(--color-focus-blue);
-  color: #fff;
+  opacity: 0.7;
 }
 
 .rtf--ab:focus {
-  border-color: var(--color-focus-blue);
+  opacity: 0.7;
 }
