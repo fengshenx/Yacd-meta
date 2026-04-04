@@ -1,13 +1,14 @@
 .spining {
   position: relative;
   border-radius: 50%;
-  background: linear-gradient(60deg, #e66465, #9198e5);
+  background: var(--color-text);
 
   width: 48px;
   height: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--color-background);
 }
 
 .spining:before {
