@@ -1,17 +1,17 @@
 .card {
-  background: var(--color-bg-card);
-  border-radius: 12px;
+  background: var(--color-background);
+  border: 1px solid var(--color-separator);
+  border-radius: 16px;
   padding: 10px 14px;
   margin-bottom: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
   gap: 4px;
   cursor: pointer;
-  transition: transform 0.1s ease;
+  transition: opacity 0.15s ease;
 
   &:active {
-    transform: scale(0.98);
+    opacity: 0.7;
   }
 }
 
@@ -114,7 +114,7 @@
 }
 
 .closeBtn {
-  background: var(--color-bg-secondary, rgba(0, 0, 0, 0.05));
+  background: var(--bg-near-transparent);
   border: none;
   border-radius: 50%;
   width: 28px;
@@ -124,10 +124,9 @@
   justify-content: center;
   color: var(--color-text-secondary);
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: opacity 0.15s ease;
 
   &:hover {
-    background: rgba(231, 76, 60, 0.1);
-    color: #e74c3c;
+    opacity: 0.7;
   }
 }

@@ -1,5 +1,5 @@
 .tr {
-  transition: all 0.2s ease;
+  transition: background-color 0.15s ease;
   cursor: pointer;
   display: flex;
   align-items: stretch;
@@ -7,20 +7,19 @@
   min-width: fit-content;
 
   &:hover {
-    // hover 作用到每个 td，避免 odd 行背景覆盖
     .td {
-      background: rgba(66, 133, 244, 0.08);
+      background: var(--bg-near-transparent);
     }
 
     .odd {
-      background: rgba(66, 133, 244, 0.08);
+      background: var(--bg-near-transparent);
     }
   }
 }
 
 .th {
   height: 48px;
-  background: var(--bg-log-info-card);
+  background: var(--color-background);
   top: 0;
   font-size: 0.8em;
   font-weight: 600;
@@ -28,16 +27,16 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   color: var(--color-text-secondary);
-  border-bottom: 2px solid var(--color-separator);
+  border-bottom: 1px solid var(--color-separator);
   position: sticky;
   z-index: 20;
   padding: 0 8px;
   white-space: nowrap;
   overflow: hidden;
-  flex-shrink: 0; // Ensure fixed width is respected
+  flex-shrink: 0;
 
   &:hover {
-    color: var(--color-text-highlight);
+    color: var(--color-text);
   }
 }
 
@@ -95,11 +94,11 @@
 }
 
 .overlay {
-  background: #444;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .modal {
-  background-color: var(--bg-modal);
+  background-color: var(--color-background);
 }
 
 .table {
@@ -129,7 +128,7 @@
 .theadWrapper {
   width: 100%;
   overflow: hidden;
-  background: var(--bg-log-info-card);
+  background: var(--color-background);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
@@ -156,13 +155,12 @@
   align-items: center;
   gap: 10px;
   flex: 1;
-  background: var(--color-bg-card);
+  background: var(--color-background);
   padding: 8px 12px;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  color: var(--color-focus-blue);
+  border: 1px solid var(--color-separator);
+  color: var(--color-text);
   position: relative;
-  border: 1px solid var(--color-bg-card-border, rgba(0, 0, 0, 0.05));
 
   select {
     position: absolute;
@@ -196,9 +194,9 @@
 }
 
 .sortDirBtn {
-  background: var(--color-bg-card);
-  border: 1px solid var(--color-bg-card-border, rgba(0, 0, 0, 0.05));
-  color: var(--color-focus-blue);
+  background: var(--color-background);
+  border: 1px solid var(--color-separator);
+  color: var(--color-text);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -206,12 +204,10 @@
   height: 38px;
   border-radius: 12px;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  transition: all 0.2s ease;
+  transition: opacity 0.15s ease;
 
   &:active {
-    transform: scale(0.95);
-    background: var(--color-bg-secondary);
+    opacity: 0.7;
   }
 }
 
