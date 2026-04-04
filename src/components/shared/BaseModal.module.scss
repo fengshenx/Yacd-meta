@@ -1,17 +1,16 @@
 .overlay {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .cnt {
   position: absolute;
-  background-color: var(--bg-modal);
+  background-color: var(--color-background);
   color: var(--color-text);
   line-height: 1.4;
   opacity: 0.6;
-  transition: all 0.3s ease;
-  // transform: scale(1.2);
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 4px, rgba(0, 0, 0, 0.24) 0px 16px 32px;
+  transition: opacity 0.2s ease;
+  border: 1px solid var(--color-separator);
+  border-radius: 16px;
 }
 .afterOpen {
   opacity: 1;
-  // transform: scale(1);
 }

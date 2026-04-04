@@ -13,12 +13,11 @@
   padding: 0 15px;
   width: 100%;
   font-size: small;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition: border-color 0.15s ease;
 }
 
 .input:focus {
-  border-color: var(--color-focus-blue);
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+  border-color: var(--color-text);
 }
 
 input::-webkit-outer-spin-button,

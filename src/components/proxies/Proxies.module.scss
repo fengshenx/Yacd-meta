@@ -86,7 +86,7 @@
 .tabsContainer {
   display: flex;
   align-items: center;
-  background-color: var(--color-bg-sidebar);
+  background-color: var(--color-input-bg);
   border-radius: 12px;
   padding: 4px;
 
@@ -107,8 +107,7 @@
   font-size: 1em;
   font-weight: 500;
   color: var(--color-text-secondary);
-  transition: all 0.2s ease;
-  user-select: none;
+  transition: color 0.15s ease, background-color 0.15s ease;
 
   @media (max-width: 768px) {
     padding: 6px 10px;
@@ -120,13 +119,12 @@
   }
 
   &:hover {
-    color: var(--color-focus-blue);
-    background: rgba(176, 206, 255, 0.221);
+    color: var(--color-text);
   }
 
   &.active {
-    background-color: var(--color-focus-blue);
-    color: #fff;
+    background-color: var(--color-text);
+    color: var(--color-background);
   }
 }
 
@@ -138,8 +136,8 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.15);
-  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.15);
+  border-radius: 9999px;
   font-weight: 600;
   min-width: 20px;
   flex-shrink: 0;

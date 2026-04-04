@@ -4,7 +4,7 @@
   right: 0;
   left: 0;
   bottom: 0;
-  background: #444;
+  background: rgba(0, 0, 0, 0.4);
   z-index: 1024;
   display: flex;
   align-items: center;
@@ -14,8 +14,8 @@
 .content {
   outline: none;
   color: var(--color-text);
-  background: var(--bg-modal);
-  padding: 20px;
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-card);
+  background: var(--color-background);
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid var(--color-separator);
 }
