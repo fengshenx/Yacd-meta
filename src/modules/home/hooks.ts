@@ -20,7 +20,7 @@ export function useConnectionSummary(apiConfig: ClashAPIConfig) {
         upTotal: prettyBytes(uploadTotal),
         dlTotal: prettyBytes(downloadTotal),
         connNumber: connections ? connections.length : 0,
-        mUsage: prettyBytes(memory),
+        mUsage: typeof memory === 'number' ? prettyBytes(memory) : '--',
       });
     },
     [setState]

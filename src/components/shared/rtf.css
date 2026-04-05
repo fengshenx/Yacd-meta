@@ -107,7 +107,7 @@
 .rtf--mb {
   width: 48px;
   height: 48px;
-  background: var(--btn-bg);
+  background: var(--color-text);
   z-index: 9999;
   display: inline-flex;
   justify-content: center;
@@ -120,11 +120,14 @@
   padding: 0;
   -webkit-user-drag: none;
   font-weight: bold;
-  color: var(--color-btn-fg);
+  color: var(--color-background);
   font-size: 18px;
 }
-.rtf--mb > * {
+.rtf--mb > *,
+.rtf--mb svg {
   transition: ease-in-out transform 0.2s;
+  fill: currentColor;
+  stroke: currentColor;
 }
 
 .rtf--ab__c {
